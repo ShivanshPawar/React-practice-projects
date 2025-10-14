@@ -1,0 +1,149 @@
+// Global variables
+$bg-light: #F0F0F0;
+$text-gray: gray;
+$border-color: rgba(169, 169, 169, 0.76);
+$border-light: rgba(166, 166, 166, 0.49);
+$shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+$font-main: 'Poppins', sans-serif;
+
+// Global reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-main;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+// Parent container
+.parent {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $bg-light;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 25px;
+
+  .card {
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: $shadow-light;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    // Top
+    .top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid $border-color;
+        padding: 5px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      button {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        padding: 0.3rem 0.5rem;
+        border-radius: 5px;
+        border: 1px solid $border-light;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.05);
+        }
+      }
+    }
+
+    // Center
+    .center {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      h3 {
+        font-size: 1rem;
+
+        span {
+          font-size: 0.8rem;
+          color: $text-gray;
+        }
+      }
+
+      h2 {
+        font-size: larger;
+      }
+
+      div {
+        display: flex;
+        gap: 10px;
+
+        h4 {
+          font-size: small;
+          background-color: #e0e0e09b;
+          padding: 3px;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    // Bottom 
+    .bottom {
+      width: 100%;
+      margin-top: auto;
+      border-top: 1px solid $border-color;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        font-size: large;
+      }
+
+      p {
+        font-size: small;
+        color: $text-gray;
+      }
+
+      button {
+        padding: 5px 15px;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #222;
+        }
+      }
+    }
+  }
+}
