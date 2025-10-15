@@ -22,7 +22,7 @@ Every project is built using:
 | # | Project Name | Description | Tech |
 |---|---------------|--------------|------|
 | 1 | Job Card UI | Clean job listing card UI with the help of props | React + SCSS |
-| 2 | UI/components | Clean UI with the help of props and components structure | React + Tailwind css |
+| 2 | Website UI | Clean UI with the help of props and component based structure | React + Tailwind css |
 
 > 💡 More mini projects coming soon — new ones drop as I learn new topics!
 
@@ -33,7 +33,7 @@ Every project is built using:
 Clone the repo and start exploring:
 
 ```bash
-git clone https://github.com/your-username/react-mini-projects.git
+git clone https://github.com/ShivanshPawar/React-Practice-Projects.git
 cd react-mini-projects
 npm install
 npm start
