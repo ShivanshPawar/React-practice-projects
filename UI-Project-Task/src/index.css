@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+
+
+#rccw::-webkit-scrollbar{
+    display: none;
+}

@@ -1,11 +1,11 @@
 import React from 'react'
 import CardContent from './CardContent'
 
-const Card = () => {
+const Card = (props) => {
     return (
-        <div className='drop-shadow-2xl overflow-hidden h-full w-70 relative rounded-4xl '>
-            <img className='w-full h-full object-cover' src="https://i.pinimg.com/736x/7a/ea/08/7aea08c5323513c0a4c28ff5cb4d5d14.jpg" alt="" />
-            <CardContent/>
+        <div className='flex-nowrap shrink-0 overflow-hidden h-full w-70 relative rounded-4xl '>
+            <img className='w-full h-full object-cover' src={props.img} alt="" />
+            <CardContent id={props.id} color={props.color} tag={props.tag} />
         </div>
     )
 }
