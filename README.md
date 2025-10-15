@@ -22,6 +22,7 @@ Every project is built using:
 | # | Project Name | Description | Tech |
 |---|---------------|--------------|------|
 | 1 | Job Card UI | Clean job listing card UI with the help of props | React + SCSS |
+| 2 | UI/components | Clean UI with the help of props and components structure | React + Tailwind css |
 
 > 💡 More mini projects coming soon — new ones drop as I learn new topics!
 
