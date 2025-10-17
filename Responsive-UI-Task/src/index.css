@@ -5,8 +5,21 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#nav:hover{
+#nav:hover {
   cursor: pointer;
   color: #006093;
   text-decoration: underline;
+}
+
+#marq{
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

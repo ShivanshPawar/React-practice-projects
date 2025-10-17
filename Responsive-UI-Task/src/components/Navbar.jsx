@@ -3,7 +3,7 @@ import { Building2, TextAlignJustify } from 'lucide-react';
 
 const Navbar = () => {
 
-    
+
     return (
 
         <div className='w-full py-5 flex justify-between items-center'>
