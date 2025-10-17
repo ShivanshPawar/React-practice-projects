@@ -3,7 +3,7 @@ import HomePage from './pages/HomePage.Jsx'
 
 const App = () => {
   return (
-    <div className='w-screen h-screen'>
+    <div className='w-full h-screen'>
       <HomePage />
     </div>
   )
