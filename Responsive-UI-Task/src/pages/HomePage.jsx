@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Marquee from '../components/Marquee'
 import Section2 from '../components/Section2'
+import Section3 from '../components/Section3'
 
 const HomePage = () => {
     return (
@@ -13,6 +14,8 @@ const HomePage = () => {
             <About />
             <Marquee/>
             <Section2/>
+            <Section3/>
+
         </div>
     )
 }
