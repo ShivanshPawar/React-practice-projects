@@ -11,3 +11,6 @@
   text-decoration: underline;
 }
 
+#sec4card::-webkit-scrollbar {
+  display: none;
+}
