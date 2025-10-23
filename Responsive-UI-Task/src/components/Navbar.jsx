@@ -1,5 +1,6 @@
 import React from 'react'
-import { Building2, TextAlignJustify } from 'lucide-react';
+import { TextAlignJustify } from 'lucide-react';
+import Logo from './Logo';
 
 const Navbar = () => {
 
@@ -8,10 +9,7 @@ const Navbar = () => {
 
         <div className='w-full py-5 flex justify-between items-center'>
             {/*Logo*/}
-            <h1 className='flex items-center gap-1.5 font-extrabold text-lg'>
-                <Building2 color="#000000" strokeWidth={2} size={38} />
-                Construct Impact
-            </h1>
+            <Logo />
 
             {/*Navbar Mobile first design with hamburger menu for smaller screens*/}
             <TextAlignJustify className='lg:hidden' size={28} color="black" strokeWidth={2} />
