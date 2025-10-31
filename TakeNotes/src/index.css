@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bungee&family=Lacquer&family=Merienda:wght@300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reenie+Beanie&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&family=Syne:wght@400..800&family=Yuji+Mai&display=swap');
+@import "tailwindcss";
+
+.reenie-beanie-regular {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.reenie-beanie-bold {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 900;
+  font-style: normal;
+}
+
+#note{
+    background-image: url(https://i.pinimg.com/1200x/cd/32/30/cd323059786900f8d78a72ef59fdf1b7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#note-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+#note-content::-webkit-scrollbar{
+    display: none;
+}
+
+p{
+    line-height: 1;
+}
