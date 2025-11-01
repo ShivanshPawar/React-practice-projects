@@ -1,10 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const App = () => {
-
   const [title, setTitle] = useState("");
   const [des, setDes] = useState("");
   const [notes, setNotes] = useState([]);
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("notes");
+      if (saved) setNotes(JSON.parse(saved));
+    } catch (err) {
+      console.error("Failed to parse notes from localStorage", err);
+    }
+  }, []);
+
+
+  useEffect(() => {
+    try {
+      localStorage.setItem("notes", JSON.stringify(notes));
+    } catch (err) {
+      console.error("Failed to save notes to localStorage", err);
+    }
+  }, [notes]);
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -25,7 +42,6 @@ const App = () => {
 
   return (
     <div className="w-full bg-[#700306] text-white lg:flex p-10">
-
       <div className="lg:w-[50%] h-full">
         <h1 className="text-7xl font-semibold reenie-beanie-bold">
           Take Note's
@@ -46,7 +62,6 @@ const App = () => {
           }}
           className="mt-5 lg:w-[70%] h-[60%] bg-white p-10 rounded flex flex-col gap-5 text-black"
         >
-
           <label className="text-4xl reenie-beanie-regular">Topic :</label>
 
           <input
@@ -80,13 +95,13 @@ const App = () => {
         id="note-wrapper"
         className="lg:w-[50%] h-screen lg:border-l-2 pl-10 overflow-auto mt-10 lg:mt-0"
       >
-        {/* Notes will be shown here */}
+
         <h2 className="text-5xl font-semibold reenie-beanie-bold">
           Your Notes :
         </h2>
 
         <div className="w-full flex justify-between flex-wrap gap-5">
-          {/* Map through notes and display them */}
+
           {notes.map(function (note, index) {
             {
               return (
