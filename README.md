@@ -24,7 +24,7 @@ Every project is built using:
 | 1 | Job Card UI | Clean job listing card UI with the help of props | React + SCSS |
 | 2 | Website UI | Clean UI with the help of props and component based structure | React + Tailwind css |
 | 3 | Responsive Design | Mobile first approach , Responsive Clean UI and component based structure | React + Tailwind css |
-| 4 | TakeNote's | Practice Form handling & Two way binding | React + Tailwind css |
+| 4 | TakeNote's | Practice Form handling , Two way binding & Local Storage | React + Tailwind css |
 
 > 💡 More mini projects coming soon — new ones drop as I learn new topics!
 
