@@ -25,6 +25,7 @@ Every project is built using:
 | 2 | Website UI | Clean UI with the help of props and component based structure | React + Tailwind css |
 | 3 | Responsive Design | Mobile first approach , Responsive Clean UI and component based structure | React + Tailwind css |
 | 4 | TakeNote's | Practice Form handling , Two way binding & Local Storage | React + Tailwind css |
+| 5 | Gallery Project | Responsive image gallery that fetches photos from a fake API; features lazy loading | React + Tailwind css + Fake API (JSON Server / MSW) |
 
 > 💡 More mini projects coming soon — new ones drop as I learn new topics!
 
