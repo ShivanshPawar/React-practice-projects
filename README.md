@@ -26,6 +26,8 @@ Every project is built using:
 | 3 | Responsive Design | Mobile first approach , Responsive Clean UI and component based structure | React + Tailwind css |
 | 4 | TakeNote's | Practice Form handling , Two way binding & Local Storage | React + Tailwind css |
 | 5 | Gallery Project | Responsive image gallery that fetches photos from a fake API; features lazy loading | React + Tailwind css + Fake API (JSON Server / MSW) |
+| 6 | Redux Counter | A simple counter application demonstrating state management using Redux | React + Redux |
+
 
 > 💡 More mini projects coming soon — new ones drop as I learn new topics!
 
