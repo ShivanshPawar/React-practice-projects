@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#result-grid::-webkit-scrollbar{
+    display: none;
+}
+
+#bottom {
+    background: linear-gradient(transparent, black);
+}

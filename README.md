@@ -27,6 +27,7 @@ Every project is built using:
 | 4 | TakeNote's | Practice Form handling , Two way binding & Local Storage | React + Tailwind css |
 | 5 | Gallery Project | Responsive image gallery that fetches photos from a fake API; features lazy loading | React + Tailwind css + Fake API (JSON Server / MSW) |
 | 6 | Redux Counter | A simple counter application demonstrating state management using Redux | React + Redux |
+| 7 | Media Search | Search and fetch images from Unsplash and Pexels APIs; demonstrates API integration with Redux state management | React + Redux + Tailwind CSS + APIs/axios |
 
 
 > 💡 More mini projects coming soon — new ones drop as I learn new topics!
