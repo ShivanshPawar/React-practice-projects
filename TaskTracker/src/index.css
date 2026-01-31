@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+:root {
+  --pri-text-color: #6646e5;
+  --pri-btn-color: #aca6ff81;
+  --sec-text-color: #FE9A00;
+  --sec-btn-color: #fee5be80;
+  --ter-text-color: #10875f;
+  --ter-btn-color: #a8ffe280;
+  --sec-bg-color: #F9FAFB;
+  --bg-color: #eeeeee;
+  --text-color: #111827;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.board {
+  flex-grow: 1;
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  min-height: 0;
+}
+
+.board-col {
+  background-color: var(--sec-bg-color);
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.scrollable {
+  flex: 1;
+  min-height: 0;
+  max-height: calc(100vh - 200px);
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.modal {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.modal input,
+.modal textarea,
+.modal select {
+  padding: 0.625rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-family: inherit;
+  font-size: 0.875rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.modal input:focus,
+.modal textarea:focus,
+.modal select:focus {
+  outline: none;
+  border-color: var(--pri-text-color);
+  box-shadow: 0 0 0 3px rgba(102, 70, 229, 0.1);
+}
+
+.modal button {
+  background: var(--pri-text-color);
+  color: white;
+  border: none;
+  padding: 0.625rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.modal button:hover {
+  opacity: 0.9;
+}
+
+.modal button:active {
+  transform: scale(0.98);
+}
+
+.modal .cancel {
+  background: #9ca3af;
+}
+
+.modal .cancel:hover {
+  background: #6b7280;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
