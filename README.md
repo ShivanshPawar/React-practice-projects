@@ -41,6 +41,6 @@ Clone the repo and start exploring:
 
 ```bash
 git clone https://github.com/ShivanshPawar/React-Practice-Projects.git
-cd react-mini-projects
+cd React-Practice-Projects
 npm install
 npm start
