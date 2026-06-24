@@ -44,3 +44,4 @@ git clone https://github.com/ShivanshPawar/React-Practice-Projects.git
 cd React-Practice-Projects
 npm install
 npm start
+```
